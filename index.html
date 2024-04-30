@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .progress {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+    .progressbar {
+      height: 40px;
+      width: 400px;
+      border: 2px solid black;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-inline: auto;
+    }
+    .value-percent {
+      z-index: 2;
+      font-weight: 600;
+    }
+    .move-bar {
+      position: absolute;
+      height: inherit;
+      background-color: aqua;
+      /* width: 0%; */
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="progress">
+      <p>Progress Bar with HTML</p>
+      <div class="progressbar">
+        <span class="value-percent">20</span>
+        <div class="move-bar"></div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
